@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.13)
+project(bareOS-Kernel C CXX)
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
+pico_is_top_level_project(FREERTOS_KERNEL_TOP_LEVEL_PROJECT)
+include(${CMAKE_CURRENT_LIST_DIR}/library.cmake)
